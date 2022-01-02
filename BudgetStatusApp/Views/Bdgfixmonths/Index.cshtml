@@ -1,0 +1,113 @@
+﻿@*@model IEnumerable<BudgetStatus.Models.Bdgfixmonth>*@
+@model BudgetStatus.Models.BdgfixmonthViewModel
+
+
+@{
+    ViewData["Title"] = "Budget Status Web App";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<p>
+    <a asp-action="Create">Create New Budget</a>
+</p>
+
+<form asp-action="Index" method="get">
+
+    @*<label for="SearchYear">@ViewData["CurrentYear"]</label>*@
+    <select asp-for="Byear" class="form-control" asp-items="ViewBag.Byear" name="SearchYear" type="submit">
+        <option selected>@ViewData["CurrentYear"]</option>
+    </select>
+    <br />
+
+    <input type="submit" value="Search" class="btn btn-primary" />
+    <a asp-action="Index">Back</a>
+</form>
+
+
+<br />
+
+@*<div>Year currently displayed:</div>
+<div><h3>@ViewData["CurrentYear"]</h3></div>
+<br />*@
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Number
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Byear)*@
+                Year
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Bbudget)*@
+                Type
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Bmonth)*@
+                Month nr.
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Blongmonth)*@
+                Month
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Closed)*@
+                Current state
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Current)*@
+                Current
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.Bdgfixmonths)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Counter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Byear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bbudget)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bmonth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Blongmonth)
+            </td>
+
+            @if (item.Closed == 1)
+            {
+                <td>
+                    Closed
+                </td>
+            }
+            else
+            {
+                <td>
+                    Open
+                </td>
+            }
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Current)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Counter">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Counter">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Counter">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
