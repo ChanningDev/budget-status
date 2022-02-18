@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABvou/tx1hEWNfe3Som9WKwAAAAACAAAAAAAQZgAAAAEAACAAAADnRfx12dtOCvFNKKHNl2KFKPJtV09cKY9uDMtCOPeJugAAAAAOgAAAAAIAACAAAADTdTXNJwaf+fgA7U1fRQem4CaC740ckB9d0htRZSrRXoAAAACRykbKqITMJbmy4n3XqMXQ3bn4bwQTVPe72l442Rngy2m1JPdGm/nPGrGz/Cm38S3nqd0WA7UBa2sSa7pli9HF42EtifNkuNRKTErgeS0Jeiok5npaaMAG99cA+po8QhFY2Dv0VsPg8TSQb/FKasdNVEqWDb4+xD0bV158mmHoIUAAAACiCk7M8YrFqoCRzrtnEvSoVobJz03A5eWpbEfyujKbkMfFwhqqJmTT1FwHTGdGus+44Ccf3UcYz1Ul1/QmNdhG</EncryptedPassword>
+    <History>True|2021-12-05T15:41:08.5462342Z;True|2021-12-04T10:56:05.3107296+01:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="MyDatabase">
+      <Value>Data Source=tcp:salesbudgetdbserver.database.windows.net,1433%3bInitial Catalog=BudgetStatus_db%3bUser Id=channing%40salesbudgetdbserver%3bPassword=0k!%40hYbas</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BudgetStatus.Data.SalesDbContext">
+      <Value>Data Source=tcp:salesbudgetdbserver.database.windows.net,1433%3bInitial Catalog=BudgetStatus_db%3bUser Id=channing%40salesbudgetdbserver%3bPassword=0k!%40hYbas</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
