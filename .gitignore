@@ -477,3 +477,5 @@ BudgetStatus.csproj
 BudgetStatus.csproj.user
 **/BudgetStatus.sln
 BudgetStatus.sln
+**/wwwroot
+wwwroot
