@@ -444,7 +444,6 @@ obj
 Properties
 **/scripts.sql
 /scripts.sql
-**/salesbudget.salesbudget
 **/.DS_Store
 .DS_Store
 **/wwwroot
