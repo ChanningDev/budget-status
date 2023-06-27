@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="BudgetStatus20211204104810" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\cmor\\Documents\\GitHub\\nuova-app-sales-budget-helsinn\\Sviluppo\\NewApps\\BudgetStatus_NEW\\obj\\Release\\net5\.0\\win-x86\\PubTmp\\Out\\$" />
-  </parameter>
-  <parameter name="BudgetStatus.Data.SalesDbContext" description="" value="Data Source=tcp:salesbudgetdbserver.database.windows.net,1433;Initial Catalog=BudgetStatus_db;User Id=channing@salesbudgetdbserver;Password=0k!@hYbas" tags="dbfullsql">
-    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\cmor\\Documents\\GitHub\\nuova-app-sales-budget-helsinn\\Sviluppo\\NewApps\\BudgetStatus_NEW\\obj\\Release\\net5\.0\\win-x86\\PubTmp\\EFSQLScripts\\BudgetStatus\.Data\.SalesDbContext\.sql$" />
-  </parameter>
-</parameters>

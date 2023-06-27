@@ -471,3 +471,9 @@ SalesBudget/SalesBudget.sln
 Startup.cs
 **/Program.cs
 Program.cs
+**/BudgetStatus.csproj
+BudgetStatus.csproj
+**/BudgetStatus.csproj.user
+BudgetStatus.csproj.user
+**/BudgetStatus.sln
+BudgetStatus.sln
