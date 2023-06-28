@@ -15,4 +15,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Controllers\Others\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\Others\" />
+  </ItemGroup>
 </Project>
